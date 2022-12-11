@@ -9,7 +9,7 @@ function Navigation() {
           <li>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "red" } : { color: "white" }
+                isActive ? { color: "white" } : { color: "red" }
               }
               to="/"
               className="navigate"
@@ -20,7 +20,7 @@ function Navigation() {
           <li>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "red" } : { color: "white" }
+                isActive ? { color: "white" } : { color: "red" }
               }
               to="/about"
               className="navigate"
@@ -31,7 +31,7 @@ function Navigation() {
           <li>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "red" } : { color: "white" }
+                isActive ? { color: "white" } : { color: "red" }
               }
               to="/errorboundary"
               className="navigate"
