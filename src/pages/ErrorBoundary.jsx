@@ -13,9 +13,9 @@ function ErrorFallback({ error, resetErrorBoundary }) {
   );
 }
 
-function Bomb({ username }) {
-  if (username === "bomb") {
-    throw new Error("💥 CABOOM 💥");
+function Danger({ username }) {
+  if (username === "Danger") {
+    throw new Danger("💥 DANGER 💥");
   }
   return `Hi ${username}`;
 }
@@ -30,15 +30,15 @@ export default function App() {
         <title>ErrorBoundary</title>
         <meta
           name="description"
-          content="check my ErrorBoundary page there're alot of stuffs goes on there"
+          content="check my ErrorBoundary page there's alot of stuffs goes on there"
         />
         <link rel="canonical" href="/ErrorBoundary" />
       </Helmet>
       <div>
         <label>
-          {`Username (don't type "bomb"): `}
+          {`Username (don't type "Danger"): `}
           <input
-            placeholder={`type "bomb"`}
+            placeholder={`type "Danger"`}
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             ref={usernameRef}
@@ -53,7 +53,7 @@ export default function App() {
             }}
             resetKeys={[username]}
           >
-            <Bomb username={username} />
+            <Danger username={username} />
           </ErrorBoundary>
         </div>
       </div>
